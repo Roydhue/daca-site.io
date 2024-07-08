@@ -1,0 +1,36 @@
+#hover-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150 px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5 px rgba(0,0,0,0.2);
+  display: none; /* Initially hidden */
+  }
+
+#hover-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#hover-menu ul li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#hover-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+#hover-menu ul li a:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-left: 170px; /* Adjust according to menu width */
+  padding: 20px;
+}
