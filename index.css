@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Gotham Black', sans-serif;
 }
 
 /* Make the background image cover the entire page */
@@ -39,7 +39,9 @@ nav {
     background: rgba(0, 0, 0, 0.8);
     padding: 1em;
     border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 10;
+    font-family: 'Gotham Book', 'Source Sans Pro Black';
 }
 
 nav ul {
@@ -58,6 +60,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
     text-decoration: underline;
 }
 
