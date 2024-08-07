@@ -25,6 +25,10 @@ header, footer {
     color: white;
 }
 
+h1 {
+    font-family: 'Gotham Black';
+}
+
 footer {
     position: absolute;
     bottom: 0;
