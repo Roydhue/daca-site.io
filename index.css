@@ -15,6 +15,12 @@ html, body {
     background-size: cover;
     z-index: -1; /* Ensure it is behind other content */
     overflow: hidden; /*Prevents any content overflow issues*/
+
+    /*Optional: To ensure content is visible and properly styled*/
+    color: white;
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
 }
 
 /* Basic styling for header and footer */
