@@ -1,11 +1,17 @@
-const hoverMenu = document.getElementById('hover-menu');
 
-// Function to show the menu on hover
-hoverMenu.addEventListener('mouseenter', function() {
-  hoverMenu.style.display = 'block';
-});
-
-// Function to hide the menu when mouse leaves
-hoverMenu.addEventListener('mouseleave', function() {
-  hoverMenu.style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverMenu = document.getElementById('hover-menu');
+    
+    // Example: show/hide the menu on hover
+    document.body.addEventListener('mouseover', function(event) {
+        if (event.target.closest('header')) {
+            hoverMenu.style.display = 'block';
+        }
+    });
+    
+    document.body.addEventListener('mouseout', function(event) {
+        if (!event.target.closest('header')) {
+            hoverMenu.style.display = 'none';
+        }
+    });
 });
